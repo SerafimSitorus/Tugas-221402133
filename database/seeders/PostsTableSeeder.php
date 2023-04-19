@@ -19,8 +19,8 @@ class PostsTableSeeder extends Seeder {
         for($i = 1; $i <= 5; $i++){
             $posts [] = [
                 'title'     => $faker->sentence($nbWords = 3, $variableNbWords = true),
-                'excerpt'   => $faker->sentence($nbWords = 6, $variableNbWords = true),
-                'content'   => $faker->text,
+                'excerpt'   => $faker->text,
+                'content'   => $faker->paragraph($nbSentences = 6, $variableNbSentences = true),
                 'image'     => $faker->imageUrl($width = 640, $height = 480),
                 'author_id' => $faker->numberBetween(1,10)
             ];
