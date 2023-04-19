@@ -24,7 +24,7 @@ class PostsTableSeeder extends Seeder {
                 'image'     => $faker->imageUrl($width = 640, $height = 480),
                 'author_id' => $faker->numberBetween(1,10)
             ];
-
+            
         }
         DB::table("posts")->insert($posts);
     }
