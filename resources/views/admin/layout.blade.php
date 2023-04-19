@@ -48,7 +48,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-                 @include('admin.layout.footer')
+                 @include('admin.layout.footer')a
             <!-- End of Footer -->
 
         </div>
